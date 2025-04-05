@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<style>
+   *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      /* font-family: 'Courier New', Courier, monospace; */
+   }
+   body{
+      position: relative;
+   }
+   body::before{
+      content: "";
+      position: absolute;
+      background-image: linear-gradient(blue,purple 50%);
+      top: 0px;
+      right: 0px;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: .60;
+   }
+   nav{
+      height: 50px;
+      /* margin-top:20px; */
+      overflow: hidden;
+      font-size: 20px;   
+      background-color: blueviolet;
+      position: sticky;
+      top: 0px;
+      border-radius: 50px;
+   }
+   nav ul li{
+      transition: all 1s ease-in 0s;
+   }
+   nav ul li:hover{
+      transform: scale(1.5);
+      background: rgb(176, 122, 225);
+   }
+   nav ul{
+      display: flex;
+      position: relative;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 15px;
+   }
+   nav li a{
+      text-decoration: none;
+      color: white;
+   }
+   @media(max-width:450px){
+      nav{
+         height: 150px;
+      }
+      nav ul{
+        flex-direction: column;
+      }
+      nav ul li{
+         padding-bottom: 5px;
+      }
+      nav ul li:hover{
+         transform: scale(1);
+      }
+   }
+   footer{
+      text-align: center;
+      background-color: #22162b;
+      color: rgb(153, 153, 72);
+      
+   }
+   footer p{
+      margin-bottom: 5px;
+   }
+   footer a{
+      color: yellow;
+      transition: all 1s ease-in 0s;
+   }
+   footer a:hover{
+      font-size: 25px;
+      margin-bottom: 30px;
+   }
+   main{
+      margin: 50px;
+      background-image: linear-gradient(rgb(54, 54, 141),purple 50%);
+      /* background-image: url("https://picsum.photos/3840/2160"); */
+      /* animation: qwe 2s ease-in-out; */
+      color: #3e5c76;
+      overflow: hidden;
+      opacity: 1;
+   }
+   main h3{
+      background-color: #5fa8d3;
+      font-size: 20px;
+      
+      border: 3px solid rgb(160, 55, 26);
+      margin: 10px;
+   }
+   main p{
+      font-size: 18px;
+      margin-left: 30px;
+      padding: 10px;
+      color: #e0b1cb;
+      
+   }
+   main img{ 
+      box-shadow: 2px 2px 2px red;
+      margin-left: 30px;
+   }
+   main li{
+      margin-left: 30px;
+      color: #10002b;
+      margin-bottom: 5px;
+      color: cadetblue;
+   }
+   main li b{
+      color: #780116;
+   }
+   main li i{
+      color: #780116;
+      font-weight: 900;
+   }
+   main h4{
+      margin-left: 30px;
+   }
+   main a:hover{
+      font-size: 25px;
+   }
+   main li b{
+      color: white;
+   }
+   main li i{
+      color: #780116;
+      font-weight: 900;
+   }
+   main h4{
+      margin-left: 30px;
+   }
+   main a {
+      color: blueviolet;
+      text-decoration: none;
+   
+      font-weight: 900;
+      transition: all 1s ease-in 0s;
+      color: white;
+      background-color: #118ab2;
+      margin-bottom: 30px;
+   }
+</style>
+<body>
+   <nav>
+   <ul>
+      <li type="none">
+         <a href="Home.html">Home</a>
+      </li>
+      <li type="none">
+         <a href="culture.html">Culture</a>
+      </li>
+      <li type="none">
+         <a href="landmark.html">Landmarks</a>
+      </li>
+      <li type="none">
+         <a href="cuisine.html">Cuisine</a>
+      </li>
+      <li type="none">
+         <a href="contanctUs.html">Contact Us</a>
+      </li>
+   </ul>
+   </nav>
+   <main>
+      <h3>Popular Indian Dishes</h3>
+   
+   <p>Explore the flavour of India through is diverse and rich culinary tradition!</p>
+   <ul>
+      <li type="none"><b>Biryani:</b>A fragrant rice dish made with aromatic spices and meat or vegetables.</li>
+      <li type="none"><b>Butter Chicken:</b>A creamy,tomato-based curry that's favorite worldwide.</li>
+      <li type="none"><b>Panner Tikka:</b>Marinated paneer cubes grilled to profection</li>
+   </ul>
+   <img src="/biryani.jpg" alt="Biryani">
+   
+   <h4>Aromatic and flavorful Biryani</h4>
+   <h3>
+      South Indian Cuisine
+   </h3>
+   <p>South indian offer a wide array of dishes with a perfect blend of spices and tangy flavors:</p>
+   <ul>
+      <li type="none"><b>Masala Dosa:</b>A crispy rice crepe stuffed with spicy potato filling.</li>
+      <li type="none"><b>Idli and Sambar:</b> Soft rice cakes served with a tangy lentil-based vegetable stew.</li>
+      <li type="none"><b>Chettined Chicken:</b>A fiery, flavourful chicken dish from Tamil Nadu.</li>
+   </ul>
+   <img src="/dosa.jpg" alt="dosa">
+   <h4>South Indian favorite: Masala Dosa</h4>
+   <h3>
+      Sweet Delights
+   </h3>
+   <p>No Indian meal is complete without indulging in some mouth-watering desserts:</p>
+   <ul>
+   <li type="none"><b>Gulab Jamun:</b> Fried milk solids soaked in sugar syrup.</li>
+   <li type="none"><b>Rasgulla:</b> Soft spongy cheese ball in light sugar syrup.</li>
+   <li type="none"><b>Payasam:</b> A South Indian dessert made of milk,rice,and jaggery.</li>
+   </ul>
+   <img src="gulab_jamun.jpg" alt="gulabjamun"><br>
+   <h4>Irresistible Gulab Jamun</h4>
+   <br><br>
+   <a href="">&#8592;Back to Home</a>
+  </main>
+
+   <footer>
+      <p>Contact us at <a href="">info@incredibleindia.com</a></p> 
+      <p>&#169; 2025 Incredible India Project</p>
+   </footer>
+</body>
+</html>

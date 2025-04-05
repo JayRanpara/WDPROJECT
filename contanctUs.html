@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      * {
+         padding: 0;
+         margin: 0;
+         box-sizing: border-box;
+      }
+
+      body {
+         position: relative;
+      }
+
+      body::before {
+         content: "";
+         position: absolute;
+         background: rgb(209, 200, 200);
+         top: 0px;
+         right: 0px;
+         background-size: cover;
+         width: 100%;
+         height: 100%;
+         z-index: -1;
+         opacity: .5;
+      }
+
+      
+
+      header h5 {
+         font-size: 18px;
+         border-radius: 14px;
+         animation: abc 2s ease-in 0s 1;
+         /* box-shadow: inset 2px 2px 2px 2px #570919; */
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+         background-color: rgb(38, 71, 70);
+         margin-top: 20px;
+         color: white;
+         margin-bottom: 25px;
+      }
+
+      nav {
+         height: 50px;
+         /* margin-top:20px; */
+         overflow: hidden;
+         font-size: 20px;
+         background-color: #3fa58a;
+         position: sticky;
+         top: 0px;
+         border-radius: 50px;
+         z-index: 1;
+      }
+
+      nav ul li {
+         transition: all 1s ease-in 0s;
+      }
+
+      nav ul li:hover {
+         transform: scale(1.5);
+         background: #81c3d7;
+      }
+
+      nav ul {
+         display: flex;
+         position: relative;
+         justify-content: space-evenly;
+         align-items: center;
+         margin: 15px;
+      }
+
+      nav li a {
+         text-decoration: none;
+         color: white;
+      }
+      @media(max-width:450px){
+      nav{
+         height: 150px;
+         margin-bottom: 20px;
+      }
+      nav ul{
+        flex-direction: column;
+      }
+      nav ul li{
+         padding-bottom: 5px;
+      }
+      nav ul li:hover{
+         transform: scale(1.2);
+      }
+      table tr td{
+         font-size: 12px;
+         width: 150px;
+      }
+   }
+      footer {
+         text-align: center;
+         background-color: #22162b;
+         color: rgb(153, 153, 72);
+
+      }
+
+      footer p {
+         margin-bottom: 5px;
+      }
+
+      footer a {
+         color: yellow;
+         transition: all 1s ease-in 0s;
+      }
+
+      footer a:hover {
+         font-size: 25px;
+         margin-bottom: 30px;
+      }
+
+      main table {
+         border-collapse: collapse;
+         margin: 25px 25px;
+         font-size: 1em;
+         min-width: 500px;
+         /* height: 700px; */
+      }
+      main{
+      margin: 50px;
+      background: rgb(255, 255, 255);
+      /* background-image: url("https://picsum.photos/3840/2160"); */
+      /* animation: qwe 2s ease-in-out; */
+      color: #3e5c76;
+      overflow: hidden;
+      opacity: .75;
+      color: rgb(255, 208, 208);  
+   }
+   main h3{
+      background-color: #5fa8d3;
+      font-size: 20px;
+      color: #011d59;
+      border: 3px solid white;
+      margin: 10px;
+      }
+      header h1{
+         margin-top: 10px;
+      position:relative;
+      animation: abc 2s ease-in 0s 1;
+      /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+      text-align: center;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      /* box-shadow: inset 2px 2px 2px 2px black; */
+      border-radius: 20px;
+      background-color: grey;
+   }
+   @keyframes abc {
+      from{
+         /* background-color: rgb(241, 239, 235);
+         color: aliceblue; */
+         opacity: 0.1;
+      }
+      to{
+         /* background-color: azure; */
+         /* color: azure; */
+         opacity: 1;
+      }
+   }
+   
+   main h3{
+      background-color: #5fa8d3;
+      font-size: 20px;
+      
+      border: 3px solid #6d597a;
+      margin: 10px;
+   }
+   main p{
+      font-size: 18px;
+      margin-left: 20px;
+      padding: 10px;
+   }
+   main li{
+      margin-left: 30px;
+      color: rgb(179, 168, 168);
+      margin-bottom: 5px;
+      padding-bottom: 10px;
+   }
+   main a {
+      color: blueviolet;
+      text-decoration: none;
+   
+      font-weight: 900;
+      transition: all 1s ease-in 0s;
+      color: white;
+      background-color: #118ab2;
+      margin-bottom: 30px;
+   }
+   main a:hover{
+      font-size: 25px;
+   }
+   main li b{
+      color: white;
+   }
+   main li i{
+      color: #780116;
+      font-weight: 900;
+   }
+   main h4{
+      margin-left: 30px;
+   }
+
+      table tr td {
+         /* border-bottom: 1px solid #fff; */
+         padding: 10px;
+      }
+
+      table tr:nth-of-type(odd) {
+         background-color: #009879;
+         color: black;
+      }
+      table tr:nth-of-type(even) {
+         background-color: #fff;
+         color: black;
+      }
+
+      table tr:last-of-type {
+         border-bottom: 5px solid #009879;
+      }
+      .button{
+         margin-left: 25px;
+         height: 30px;
+         width: 100px;
+         border-radius: 50%;
+         background-color: #009879;
+         color: white;
+         font-weight: 600;
+      }
+      main iframe{
+         margin-left: 25px;
+         height: 200px;
+         width: 400px;
+      }
+   </style>
+</head>
+
+<body>
+   <nav>
+      <ul>
+         <li type="none">
+            <a href="Home.html" target="_blank">Home</a>
+         </li>
+         <li type="none">
+            <a href="Culture.html" target="_blank">Culture</a>
+         </li>
+         <li type="none">
+            <a href="landmark.html" target="_blank">Landmarks</a>
+         </li>
+         <li type="none">
+            <a href="cuisine.html" target="_blank">Cuisine</a>
+         </li>
+         <li type="none">
+            <a href="contactUs.html" target="_blank">Contact Us</a>
+         </li>
+      </ul>
+   </nav>
+   </div>
+   <header>
+      <h1>Contact Us</h1>
+      <h5>Please fill out the form below for any inquiries or to register as a student.</h5>
+   </header>
+   <main>
+
+      <h3>Student Registration Form</h3>
+      <form action="">
+         <table cellspacing="0" >
+            <tr>
+               <td>First Name:</td>
+               <td><input type="text" placeholder="Enter your name:"></td>
+            </tr>
+            <tr>
+               <td>Password:</td>
+               <td><input type="password"></td>
+            </tr>
+            <tr>
+               <td class="gender">Gender:</td>
+               <td><input type="radio" name="Gender" value="Male" class="input">Male
+                  <input type="radio" name="Gender" value="Female" class="input">Female
+               </td>
+            </tr>
+            <tr>
+               <td>Subscribe to Newsletter:</td>
+               <td><input type="checkbox" name="Subscribe" checked></td>
+            </tr>
+            <tr>
+               <td>State:</td>
+               <td><select name="state">
+                     <option value="Rajkot">Rajkot</option>
+                     <option value="Surat">Surat</option>
+                     <option value="Gandhinagar">Gandhinagar</option>
+                  </select></td>
+            </tr>
+            <tr>
+               <td>Upload Resume:</td>
+               <td><input type="file" name="Resume"></td>
+            </tr>
+            <tr>
+               <td>Address:</td>
+               <td><textarea name="" id="" cols="50" rows="3" placeholder="Enter your full address"></textarea></td>
+            </tr>
+            <tr>
+               <td>Date of Birth:</td>
+               <td><input type="date" name="Date of Birth"></td>
+            </tr>
+            <tr>
+               <td>Preferred Interview Time:</td>
+               <td><input type="time" name="Time" id=""></td>
+            </tr>
+            <tr>
+               <td>Marks:</td>
+               <td><input type="number" name="marks" id=""></td>
+            </tr>
+         </table>
+         <input type="submit" value="Submit" class="button">
+         <input type="reset" value="Reset" class="button">
+      </form>
+      <h3>More Information</h3>
+      <p>Explore goverment job opportunities on the official OJAC website:</p>
+      <iframe src="https://ojas.gujarat.gov.in/Home.aspx" frameborder="200" height="200"></iframe>
+      <br><br>
+      <a href="Home.html">&#8592;Back to Home</a><br>
+   </main>
+   <footer>
+      <p><i>contact us at<a href="">info@incredibleindia.com</a></i></p>
+      <p>&#169; 2025 Incredible India Project</p>
+   </footer>
+</body>
+
+</html>
